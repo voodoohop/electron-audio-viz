@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
   </head>
-  <body style="width: 100vw; height: 100vh; padding: 0; margin: 0">
-    <!--<canvas
+  <body style="width: 100vw; height: 100vh; padding: 0; margin: 0;">
+    <canvas
       id="web-gl-canvas"
-      style="width: 100vw; height: 100vh; padding: 0; margin: 0"
-    ></canvas>-->
+      style="width: 512px; height: 512px; padding: 0; margin: 0;   background-color: black;"
+      width=512
+      height=512
+    ></canvas>
+    <hr>
+    <textarea rows="20" cols="90" id="droid-output" disabled="true"></textarea>
+    <div id="status"></div>
+    <hr>
   </body>
   <script>
     // You can also require other files to run in this process
-    require('./out-tsc/renderer-main.js')
+    require('./out-tsc/renderer-regl.js')
   </script>
 </html>
